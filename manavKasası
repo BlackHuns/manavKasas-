@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class ManavKasa {
+    public static void main (String[] args){
+        System.out.println("Ben armut, elma, domates, muz, patlıcan ürünlerinin veilen ağırlıklarına göre" +
+                           " kasa fiyatı hesaplayan programım");
+        Scanner tara = new Scanner(System.in);
+        System.out.printf("Armut kaç kg: ");
+        float armut = tara.nextFloat();
+        System.out.printf("Elma kaç kg: ");
+        float elma = tara.nextFloat();
+        System.out.printf("Domates kaç kg: ");
+        float domates = tara.nextFloat();
+        System.out.printf("Muz kaç kg: ");
+        float muz = tara.nextFloat();;
+        System.out.printf("Patlıcan kaç kg: ");
+        float patlican = tara.nextFloat();
+        double armutFiyat = 2.14;
+        double elmaFiyat = 3.67;
+        double domatesFiyat = 1.11;
+        double muzFiyat = 0.95;
+        float patlicanFiyat =  5;
+
+        double totalFiyat = elmaFiyat * elma + armutFiyat * armut + muz * muzFiyat + domatesFiyat * domates + patlicanFiyat * patlican;
+        System.out.println("Toplam ödenecek tutar: " + totalFiyat + " TL'dir.");
+
+
+    }
+}
